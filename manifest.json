@@ -1,0 +1,21 @@
+{
+    "name": "Google Solitaire",
+    "short_name": "Solitaire",
+    "start_url": "./standalone.html",
+    "display": "standalone",
+    "background_color": "#34A249",
+    "theme_color": "#34A249",
+    "description": "Play Solitaire as a PWA!",
+    "icons": [
+        {
+            "src": "icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

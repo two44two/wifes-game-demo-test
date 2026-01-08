@@ -3,15 +3,13 @@ body {
   overflow: hidden;
   font-family: sans-serif;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
-
 .border-box {
   box-sizing: border-box;
 }
-
 #solitaire-waiting-hint {
   font-size: 30pt;
   width: 100%;
@@ -27,30 +25,30 @@ body {
   margin-top: 144px;
   stroke: white;
   -webkit-animation: rotator 1.4s linear infinite;
-  animation: rotator 1.4s linear infinite;
+          animation: rotator 1.4s linear infinite;
 }
 
 @-webkit-keyframes rotator {
   0% {
     -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+            transform: rotate(0deg);
   }
 
   100% {
     -webkit-transform: rotate(270deg);
-    transform: rotate(270deg);
+            transform: rotate(270deg);
   }
 }
 
 @keyframes rotator {
   0% {
     -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+            transform: rotate(0deg);
   }
 
   100% {
     -webkit-transform: rotate(270deg);
-    transform: rotate(270deg);
+            transform: rotate(270deg);
   }
 }
 
@@ -58,9 +56,9 @@ body {
   stroke-dasharray: 187;
   stroke-dashoffset: 0;
   -webkit-transform-origin: center;
-  transform-origin: center;
+          transform-origin: center;
   -webkit-animation: dash 1.4s ease-in-out infinite;
-  animation: dash 1.4s ease-in-out infinite;
+          animation: dash 1.4s ease-in-out infinite;
 }
 
 @-webkit-keyframes dash {
@@ -71,13 +69,13 @@ body {
   50% {
     stroke-dashoffset: 46.75;
     -webkit-transform: rotate(135deg);
-    transform: rotate(135deg);
+            transform: rotate(135deg);
   }
 
   100% {
     stroke-dashoffset: 187;
     -webkit-transform: rotate(450deg);
-    transform: rotate(450deg);
+            transform: rotate(450deg);
   }
 }
 
@@ -89,16 +87,15 @@ body {
   50% {
     stroke-dashoffset: 46.75;
     -webkit-transform: rotate(135deg);
-    transform: rotate(135deg);
+            transform: rotate(135deg);
   }
 
   100% {
     stroke-dashoffset: 187;
     -webkit-transform: rotate(450deg);
-    transform: rotate(450deg);
+            transform: rotate(450deg);
   }
 }
-
 /************** End *************************/
 
 #solitaire {
@@ -120,11 +117,11 @@ body {
 
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #solitaire-topbar .material-icons-extended {
@@ -135,9 +132,9 @@ body {
 .topbar-mode-indicator {
   margin: 0px 8px;
   -webkit-transform: scale(0.5);
-  transform: scale(0.5);
+          transform: scale(0.5);
   -webkit-transform-origin: left bottom 0;
-  transform-origin: left bottom 0;
+          transform-origin: left bottom 0;
   bottom: 10px;
 }
 
@@ -150,42 +147,36 @@ body {
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 #solitaire-board {
   position: relative;
 }
-
 #solitaire-board .dark-box {
   background-color: rgba(43, 123, 59, 1);
 }
-
 #solitaire-board .pile {
   position: absolute;
 }
-
 #solitaire-board .card {
   position: absolute;
   -webkit-transform: translateZ(0);
-  transform: translateZ(0);
+          transform: translateZ(0);
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+          backface-visibility: hidden;
 }
-
 #solitaire-board .card-canvas {
   background-color: white;
   border-radius: 5px;
-  box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 -1px 2px rgba(0,0,0,0.05);
   width: 100%;
   height: 100%;
 }
-
 #solitaire-board .placeholder {
   position: relative;
   z-index: 1;
 }
-
 #solitaire-container {
   background-color: #34A249;
   position: absolute;
@@ -196,7 +187,6 @@ body {
   left: 0;
   right: 0;
 }
-
 #solitaire-scorebar {
   cursor: default;
   padding: 0px 16px;
@@ -208,21 +198,19 @@ body {
 
   display: flex;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 
   font-size: 12px;
 }
-
 #solitaire-scorebar .item {
   color: #ffffff;
   text-align: center;
   margin: 12px;
   margin-right: 24px;
 }
-
 #solitaire-scorebar .title {
   color: #ffffff;
   opacity: 0.5;
@@ -230,7 +218,7 @@ body {
   margin-left: 24px;
 }
 
-#solitaire-topbar>div:last-child {
+#solitaire-topbar > div:last-child {
   margin-right: 8px;
 }
 
@@ -239,14 +227,14 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .flex-center {
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #solitaire-dialog-share {
@@ -254,7 +242,7 @@ body {
   font-size: 14px;
 }
 
-#solitaire-dialog-share span {
+#solitaire-dialog-share span{
   margin-right: 12px;
 }
 
@@ -268,11 +256,11 @@ body {
   cursor: pointer;
 }
 
-#solitaire-dialog-share .share-icons>div {
+#solitaire-dialog-share .share-icons > div {
   -webkit-transform: scale(0.42);
-  transform: scale(0.42);
+          transform: scale(0.42);
   -webkit-transform-origin: left top 0;
-  transform-origin: left top 0;
+          transform-origin: left top 0;
 }
 
 #solitaire-scorebar-sidebar .button {
@@ -287,12 +275,12 @@ body {
   cursor: pointer;
   font-weight: 500;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  -ms-grid-row-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+              -ms-grid-row-align: center;
+          align-items: center;
 }
 
-#solitaire-scorebar-sidebar .button i {
+#solitaire-scorebar-sidebar .button i{
   margin: 5px;
 }
 
@@ -301,7 +289,6 @@ body {
   cursor: default;
   color: rgba(255, 255, 255, 0.54);
 }
-
 #solitaire-scorebar-sidebar {
   position: absolute;
   bottom: 0;
@@ -316,17 +303,16 @@ body {
 
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-
-#solitaire-scorebar-sidebar .button {
+#solitaire-scorebar-sidebar .button{
   -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #solitaire-mode {
@@ -334,7 +320,7 @@ body {
 }
 
 .solitaire-dialog {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0,0,0,0.7);
   bottom: 0;
   left: 0;
   position: absolute;
@@ -354,10 +340,9 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-
 #solitaire-mode-dialog .hint {
   font-size: 14px;
   color: #888888;
@@ -367,17 +352,15 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-
 #solitaire-mode-dialog .option-bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 5px 15px 15px 15px;
 }
-
 #solitaire-mode-dialog .option {
   cursor: pointer;
   padding: 0 10px;
@@ -387,25 +370,22 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-
-#solitaire-mode-dialog .option>div {
+#solitaire-mode-dialog .option > div {
   -webkit-transform: scale(0.8);
-  transform: scale(0.8);
+          transform: scale(0.8);
 }
-
 #solitaire-mode-dialog .option span {
   font-size: 14px;
   text-align: center;
   width: 100%;
   margin: 5px;
 }
-
 #solitaire-mode-dialog .close-button {
   cursor: pointer;
   position: relative;
@@ -434,7 +414,7 @@ body {
 #final-dialog-flipper {
   position: relative;
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 #ribbon-img {
@@ -470,16 +450,14 @@ body {
 .ribbon-char {
   position: relative;
   top: 100px;
-  display: inline;
+  display:inline;
   -webkit-transition: all 300ms ease-out 1500ms;
   transition: all 300ms ease-out 1500ms;
 }
-
 .ribbon-char:nth-child(2) {
   -webkit-transition: all 300ms ease-out 1700ms;
   transition: all 300ms ease-out 1700ms;
 }
-
 .ribbon-char:last-child {
   -webkit-transition: all 300ms ease-out 1900ms;
   transition: all 300ms ease-out 1900ms;
@@ -496,7 +474,7 @@ body {
   width: 15px;
   background-color: yellow;
   -webkit-transform: rotate(25deg);
-  transform: rotate(25deg);
+          transform: rotate(25deg);
 }
 
 #ribbon-cards {
@@ -521,7 +499,7 @@ body {
 #ribbon-cards .card-canvas {
   background-color: white;
   border-radius: 5px;
-  box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 -1px 2px rgba(0,0,0,0.05);
   height: 50px;
 }
 
@@ -543,7 +521,7 @@ body {
 .win .confetti-jar {
   top: 400px;
   -webkit-transform: rotateY(720deg);
-  transform: rotateY(720deg);
+          transform: rotateY(720deg);
 }
 
 @-webkit-keyframes ribbon-card-animation {
@@ -582,33 +560,34 @@ body {
 
 .win #ribbon-cards .card:nth-child(1) {
   -webkit-animation: 750ms ease-in-out 1400ms ribbon-card-animation;
-  animation: 750ms ease-in-out 1400ms ribbon-card-animation;
+          animation: 750ms ease-in-out 1400ms ribbon-card-animation;
   -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .win #ribbon-cards .card:nth-child(2) {
   -webkit-animation: 750ms ease-in-out 1600ms ribbon-card-animation;
-  animation: 750ms ease-in-out 1600ms ribbon-card-animation;
+          animation: 750ms ease-in-out 1600ms ribbon-card-animation;
   -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .win #ribbon-cards .card:nth-child(3) {
   -webkit-animation: 750ms ease-in-out 1800ms ribbon-card-animation;
-  animation: 750ms ease-in-out 1800ms ribbon-card-animation;
+          animation: 750ms ease-in-out 1800ms ribbon-card-animation;
   -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .win #ribbon-cards .card:nth-child(4) {
   -webkit-animation: 750ms ease-in-out 2000ms ribbon-card-animation;
-  animation: 750ms ease-in-out 2000ms ribbon-card-animation;
+          animation: 750ms ease-in-out 2000ms ribbon-card-animation;
   -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 #solitaire-final-dialog-container.win-end {
   top: -100px;
   opacity: 0;
 }
+
